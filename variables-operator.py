@@ -65,8 +65,7 @@
 
 # + , - , * , / , // , % , **
 
-a = 10
-b = 3
+
 
 # c = a + b
 # d = a - b
@@ -108,12 +107,12 @@ b = 3
 # == , != , > , < , >= , <=
 # Return type of comparison operator is boolean
 
-print(a == b)
-print(a != b)
-print(a > b)
-print(a < b)
-print(a >= b)
-print(a <= b)
+# print(a == b)
+# print(a != b)
+# print(a > b)
+# print(a < b)
+# print(a >= b)
+# print(a <= b)
 
 
 # a = 4567
@@ -122,4 +121,86 @@ print(a <= b)
 
 # b = 4535
 
-# c = 67546
+# c = 6754
+
+# a = 4567
+
+# digit1 = a//1000
+# digit2 = (a//100) % 10 
+# digit3 = (a//10) % 10
+# digit4 = a % 10
+
+# # sum = digit1+digit2+digit3+digit4
+
+# # print(sum)
+
+# reverse_of_num = digit4 * 1000 + digit3 * 100 + digit2 * 10 + digit1
+
+# print(reverse_of_num)
+
+# Logical operator
+# AND OR NOT
+
+
+a = 10
+b = 3
+c = 20
+d = 10
+
+
+# print((a > b) and (a < c))
+
+# print((a <b) or (a<c))
+
+# print(not(a<b))
+
+# print(True and True)
+# print(True and False)
+# print(True or True)
+# print(True or False)
+# print(not True)
+
+# Bitwise operator
+
+# & | ~ ^ >> <<
+
+# 0000 1010 => 0000 0010 <== 00101000
+# 0000 0011
+# ==========
+# 0000 0010 - 2
+# 0000 1011 - 11
+# 0000 1001 - 9
+
+
+# print(a & b)
+# print(a | b)
+# print(~a)
+# print(a ^ b)
+# print(a >> 2)
+# print(a<<2)
+
+# Special operators:
+# is , is not 
+# membership operator - in , not in
+
+
+# print(a is not b)
+# print(a is d)
+
+# name = "santhosh"
+
+# print('h' in name)
+
+# nums = [1,32,4,5,45,6,56,7]
+
+# unit = "santhosh"
+
+# print(5 in nums)
+
+# a = 10
+
+# c = 10
+
+# print(a is c)
+
+# print( a  == (5+5))
