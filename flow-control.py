@@ -84,25 +84,121 @@
 # # tuples10.append(employee1)
 # print(type(tuples10))
 
-mylist = []
-print(mylist)
-print(type(mylist))
+# mylist = []
+# print(mylist)
+# print(type(mylist))
 
-mytuples = ()
-print(mytuples)
-print(type(mytuples))
+# mytuples = ()
+# print(mytuples)
+# print(type(mytuples))
 
-mydata = {}
-print(mydata)
-print(type(mydata))
+# mydata = {}
+# print(mydata)
+# print(type(mydata))
 
-myset = set()
-print(myset)
-print(type(myset))
+# myset = set()
+# print(myset)
+# print(type(myset))
 
-myset.add(5)
-print(myset)
+# myset.add(5)
+# print(myset)
 
-mynewset = {4}
-print(type(mynewset))
-print(mynewset)
+# mynewset = {4}
+# print(type(mynewset))
+# print(mynewset)
+
+# ============== loop =================
+
+country = ["India","Singapore","Malaysia","US","Canada"]
+
+# print(country)
+
+# for name in country:
+#     print(name)
+    
+# print("End of loop")
+
+# nums=(1,2,3,4,5)
+
+# for i in nums:
+#     print(i)
+    
+# print("End of numbers")
+
+# myname = "santhosh"
+
+# for letter in myname:
+#     print(letter)
+    
+# print("End of my name")
+
+# # ====================================
+
+# # range function
+
+# # value = range(0,10)
+# # print(value)
+
+# # for nums in range(5,10):
+# #     print(nums)
+    
+    
+mynums = [1,2,3,4,5,6,7,8,9,10,11,12]
+
+# for i in range(2,5):
+#     print(country[i])
+    
+# # ---------- break , continue -------------
+
+# for i in mynums:
+#     if i == 7:
+#         print("Encountered 7, breaking this")
+#         break
+#     print(i)
+
+# print("End of program")
+
+# for i in mynums:
+#     if i == 7:
+#         print("Encountered 7, skipping this")
+#         continue
+#     print(i)
+
+# print("End of program")
+
+# ########################################
+# # Nested For loop
+# #######################################
+
+# fruits = ["Apple","Orange","Banana"]
+
+# colors = ["Red","Blue","Yellow"]
+
+# for i in fruits:
+#     for j in colors:
+#         print(i,j)
+#     print("=======")
+
+# =========== while loop ==============
+
+# nums = [1,2,]
+
+# for i in country:
+#     print(i)
+
+mynums = [1,2,3,4,5,6,7,8]
+
+i = 0
+
+print(len(mynums))
+
+while i < len(mynums):
+    
+    # if country[i] == "Malaysia":
+    #     break
+    
+    print(mynums[i])
+    
+    i += 2 # logically i = i+1
+
+print("Ended while loop")
