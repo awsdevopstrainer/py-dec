@@ -23,55 +23,76 @@
 
 # Function arguments
 
-def addition(a=20,b=25):
+# def addition(a=20,b=25):
     
-    c = a+b
-    return c
+#     c = a+b
+#     return c
     
-# firstnumber = 10
-# # secondnumber = 20
-# thirdnumber = 30
+# # firstnumber = 10
+# # # secondnumber = 20
+# # thirdnumber = 30
 
-# print("Calling addition function")
-# addition(firstnumber, thirdnumber)
+# # print("Calling addition function")
+# # addition(firstnumber, thirdnumber)
 
-# addition("santosh","mani")
-# addition("santosh",10)
+# # addition("santosh","mani")
+# # addition("santosh",10)
 
-# addition()
+# # addition()
 
-# result = addition(10,20)
-# print(result)
-
-
-# res = addition(10)
-# print(res)
+# # result = addition(10,20)
+# # print(result)
 
 
-# print(addition(10.2))
-name = "santosh"
+# # res = addition(10)
+# # print(res)
 
-def find_sum_of_number(*given_nums):
-    print(given_nums)
-    print(type(given_nums))
-    global name
-    name = "deepti"
-    print(name)
+
+# # print(addition(10.2))
+# name = "santosh"
+
+# def find_sum_of_number(*given_nums):
+#     print(given_nums)
+#     print(type(given_nums))
+#     global name
+#     name = "deepti"
+#     print(name)
     
-    res = 0
+#     res = 0
     
-    for nums in given_nums:
-        res = res + nums
+#     for nums in given_nums:
+#         res = res + nums
     
-    print("The sum is :", sum)
+#     print("The sum is :", sum)
 
-name = "mani"
-find_sum_of_number(1)
-# print(res)
+# name = "mani"
+# find_sum_of_number(1)
+# # print(res)
 
-find_sum_of_number(1,5)
+# find_sum_of_number(1,5)
 
-find_sum_of_number(14,5,6,7,8,3)
+# find_sum_of_number(14,5,6,7,8,3)
 
-find_sum_of_number(134,23,423,354,534,34,234,54)
-print(name)
+# find_sum_of_number(134,23,423,354,534,34,234,54)
+# print(name)
+
+# import utils.mycalc as m
+from utils.mycalc import *
+import datetime
+import boto3
+
+print(dir(boto3))
+# print(datetime.date())
+
+print(dir(datetime))
+
+import math
+
+print(dir(math))
+
+# print(dir(mycalc))
+
+result = add(5,6)
+print(result)
+
+print(PI)
