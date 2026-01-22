@@ -55,8 +55,12 @@
 #     # behaviours
 #     def get_info(self):
 #         print("The car name is:",self.name)
+#         # print(f"the car name is {self.name}")
 #         print("The car has following gears:",self.gears)
 #         print("The power is ",self.power_rpm)
+
+
+
 
 # car1 = Cars("benz",5)
 # # print(car1.object_name)
@@ -71,29 +75,29 @@
 
 # car4 = Cars("ford")
 
-class Animal:
-    name = ""
+# class Animal:
+#     name = ""
     
-    def run(self):
-        print("Animals will run")
+#     def run(self):
+#         print("Animals will run")
     
-    def eat(self):
-        print("Animals will eat")
+#     def eat(self):
+#         print("Animals will eat")
         
-class LivingBeings:
-    def eat(self):
-        print("All living beings will eat")
+# class LivingBeings:
+#     def eat(self):
+#         print("All living beings will eat")
 
-class Dog(LivingBeings, Animal):
-    breed = ""
+# class Dog(LivingBeings, Animal):
+#     breed = ""
     
-    def bark(self):
-        print("I can bark",self.name)
+#     def bark(self):
+#         print("I can bark",self.name)
    
    
-puppy = Dog()
+# puppy = Dog()
 
-puppy.eat()
+# puppy.eat()
 
      
 # class Cat(Animal):
@@ -118,3 +122,76 @@ puppy.eat()
 
 # pug = Dog()
 
+
+
+class Vehicle:
+    # attributes
+    # gears = 0
+    # name = ""
+    # tyres = 4
+    
+    
+    # constructor 
+    def __init__(self):
+        self._tyres = 4
+    
+    def get_tyres(self):
+        print("there are",self._tyres,"tyres")
+        
+    #     self.tyres = 4
+    # def set_mode(self.)
+    def get_ride(self):
+        print("The vehicle is riding")
+
+    # behaviours
+    def get_info(self):
+        print("The vehicle name is:",self.name)
+        # print(f"the car name is {self.name}")
+
+class Car(Vehicle):
+    
+    def __init__(self, carname, gears, mode):
+        super().__init__()
+        self.name = carname
+        self.gears = gears
+        self.__mode = mode
+        
+    def __speed(self):
+        print("The car is riding in speed mode")
+        
+    def set_mode(self, mode):
+        self.__mode = mode
+        
+    def get_info(self):
+        super().get_info()
+        print("the car name is ", self.name, self._tyres)
+        
+    def ride(self):
+        self.__speed()
+        print("car is riding in ",self.__mode,"mode")
+        
+car1 = Car("benz",5,"auto")
+car1.get_info()
+car1.get_tyres()
+# print(car1._tyres)
+# print(car1.name)
+# car1.name = "newbenz"
+# print(car1.name)
+
+# car1.ride()
+# # car1.__mode = "manual"
+# car1.set_mode("manual")
+# car1.ride()
+# print(car1.tyres)
+# # car1.__speed()
+
+
+# print(4+4)
+
+# print("a"+"b")
+
+# a = "santhosh"
+# b = [2,3,42,34,234,234]
+
+# print(len(a))
+# print(len(b))
